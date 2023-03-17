@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="calculadora Rest" skipped="0" tests="1" time="5.99" timestamp="2023-03-06 12:21:44"><testcase name="Envio de suma exitosa"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;415&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;415&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;415&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)&#13;
+stepDefinitions.CalculadoraRestStepDefinition.validaQueElCodigoDeStatusSea(CalculadoraRestStepDefinition.java:23)&#13;
+✽.valida que el codigo de status sea 200(src/test/resources/feature/calculadoraRest.feature:8)&#13;
+</system-err></testcase></testsuite>

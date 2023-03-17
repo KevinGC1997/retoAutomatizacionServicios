@@ -1,0 +1,47 @@
+apply plugin: 'java-library'
+apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven {
+        url 'https://jitpack.io'//son otras dependencias
+    }
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.80")
+    }
+}
+
+dependencies {
+    implementation 'net.serenity-bdd:serenity-junit:2.0.80'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    implementation 'net.serenity-bdd:serenity-core:2.0.80'
+    implementation 'org.slf4j:slf4j-simple:1.7.7'
+    //Integracion entre serenity y rest-assured
+    implementation 'net.serenity-bdd:serenity-rest-assured:2.0.80'
+    //libreria de apache para manejar objetos Json / google para objetos Json
+    implementation 'org.json:json:20180813'
+    //libreria para validar estructuras
+    implementation 'com.github.everit-org.json-schema:org.everit.json.schema:1.12.0'
+    implementation fileTree(dir: 'lib', include: '*.jar')
+}
+
+test {
+    ignoreFailures = true
+}
+
+
+gradle.startParameter.continueOnFailure = true
