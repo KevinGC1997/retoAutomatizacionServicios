@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="calculadora Rest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-03T03:22:59" hostname="SQABOG-TGP4980" time="4.101">
+<testsuite name="calculadora Rest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-03T04:08:51" hostname="SQABOG-TGP4980" time="3.649">
   <properties/>
-  <testcase name="Envio de suma exitosa" classname="calculadora Rest" time="4.101"/>
+  <testcase name="Envio de suma exitosa" classname="calculadora Rest" time="3.649"/>
   <system-out><![CDATA[{expr=7+9, precision=3}
-200
 200
 16
 result
