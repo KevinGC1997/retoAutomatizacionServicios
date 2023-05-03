@@ -13,7 +13,7 @@ public class CalculadoraRestStepDefinition {
     public void kevinEnviaLaSiguienteOperacionAlServicio(String url, Map<String,String> cuerpo) {
         System.out.println(cuerpo);
         SerenityRest.given().baseUri(url).header("Content-Type","application/json").body(cuerpo).post();
-        System.out.println((SerenityRest.given().baseUri(url).body(cuerpo).post()).getStatusCode());
+        System.out.println((SerenityRest.given().baseUri(url).header("Content-Type","application/json").body(cuerpo).post()).getStatusCode());
     }
 
     @Entonces("^valida que el codigo de status sea (\\d+)$")

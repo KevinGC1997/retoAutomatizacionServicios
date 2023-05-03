@@ -22,7 +22,7 @@ public class Mascota {
         this.statusMascota = statusMascota;
     }
 
-    public String getIdMascotas() {
+    public String   getIdMascotas() {
         return idMascotas;
     }
 
